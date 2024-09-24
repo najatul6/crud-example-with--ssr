@@ -2,7 +2,9 @@ from boot.controller.boot_static_controller import boot_static_controller
 from pweb import PWebComponentRegister, PWebModuleDetails
 from boot.controller.home_controller import home_controller
 from boot.controller.person_api_controller import person_api_controller
+from boot.controller.student_api_controller import student_api_controller
 from boot.controller.person_controller import person_controller
+from boot.controller.student_controller import student_controller
 
 
 class BootModule(PWebComponentRegister):
@@ -23,4 +25,6 @@ class BootModule(PWebComponentRegister):
         pweb_app.register_blueprint(home_controller)
         pweb_app.register_blueprint(boot_static_controller)
         pweb_app.register_blueprint(person_controller)
+        pweb_app.register_blueprint(student_controller)
         pweb_app.register_blueprint(person_api_controller)
+        pweb_app.register_blueprint(student_api_controller)
