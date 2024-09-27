@@ -7,12 +7,12 @@ class StudentDetailsDTO(PWebRestDTO):
         model = Student
         load_instance = True
 
-    name = fields.String(required=True, error_messages={"required": "Please enter name"})
-    roll= fields.Integer(required=True, error_messages={"required": "Please enter roll"})
-    registration = fields.String(required=True, error_messages={"required": "Please enter registration"})
-    technology = fields.String(required=True, error_messages={"required": "Please enter technology"})
-    email = fields.Email(required=True, error_messages={"required": "Please enter email"})
-    address = fields.String(allow_none=True)
+    student_name = fields.String(required=True, error_messages={"required": "Please enter name"})
+    student_roll= fields.Integer(required=True, error_messages={"required": "Please enter roll"})
+    student_registration = fields.String(required=True, error_messages={"required": "Please enter registration"})
+    student_technology = fields.String(required=True, error_messages={"required": "Please enter technology"})
+    student_email = fields.Email(required=True, error_messages={"required": "Please enter email"})
+    student_address = fields.String(allow_none=True)
 
 
 class StudentCreateDTO(StudentDetailsDTO):
