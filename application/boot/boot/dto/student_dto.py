@@ -8,6 +8,9 @@ class StudentDetailsDTO(PWebRestDTO):
         load_instance = True
 
     name = fields.String(required=True, error_messages={"required": "Please enter name"})
+    roll= fields.String(required=True, error_messages={"required": "Please enter roll"})
+    registration=fields.String(required=True, error_messages={"required": "Please enter registration"})
+    technology=fields.String(required=True, error_messages={"required": "Please enter technology"})
     email = fields.Email(required=True, error_messages={"required": "Please enter email"})
     address = fields.String(allow_none=True)
 
