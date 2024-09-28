@@ -7,4 +7,4 @@ from pweb_ui.pweb_ui_module import PWebUIModule
 class Register(PWebModuleRegister):
 
     def get_module_list(self) -> list:
-        return [BootModule, PWebSSRModule, PWebUIModule,PWebAuthModule,]
+        return [BootModule, PWebSSRModule, PWebUIModule,PWebAuthModule]
