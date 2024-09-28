@@ -2,11 +2,11 @@ from pweb_orm import PwebModel, pweb_orm
 
 
 class Student(PwebModel):
-    student_name = pweb_orm.Column("student_name", pweb_orm.String(150), nullable=False)
-    student_email = pweb_orm.Column("student_email", pweb_orm.String(150), nullable=False)
-    student_password = pweb_orm.Column("student_password", pweb_orm.String(250), nullable=False)
-    student_roll = pweb_orm.Column("student_roll", pweb_orm.Integer(), nullable=False) 
-    student_registration = pweb_orm.Column("student_registration", pweb_orm.String(250), nullable=False)
-    student_technology = pweb_orm.Column("student_technology", pweb_orm.String(250), nullable=False)
-    student_address = pweb_orm.Column("student_address", pweb_orm.Text())
+    name = pweb_orm.Column("name", pweb_orm.String(150), nullable=False)
+    email = pweb_orm.Column("email", pweb_orm.String(150), nullable=False)
+    password = pweb_orm.Column("password", pweb_orm.String(250), nullable=False)
+    roll = pweb_orm.Column("roll", pweb_orm.String(20), nullable=False) 
+    registration = pweb_orm.Column("registration", pweb_orm.String(250), nullable=False)
+    technology = pweb_orm.Column("student_technology", pweb_orm.String(250), nullable=False)
+    address = pweb_orm.Column("address", pweb_orm.Text())
 
