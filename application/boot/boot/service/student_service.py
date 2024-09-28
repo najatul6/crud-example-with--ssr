@@ -25,5 +25,5 @@ class StudentService:
         return self.form_data_crud.delete(model_id=model_id, redirect_url=url_for("student_controller.list"))
 
     def list(self):
-        search_fields = ["name", "email"]
+        search_fields = ["name", "email","roll"]
         return self.form_data_crud.paginated_list(view_name="student/list", search_fields=search_fields)
